@@ -6,6 +6,11 @@ function increment(){
     document.getElementById("count-el").innerText=count;
 }
 
-function save(){
-    
+// Function to save the current count
+function save() {
+    let saveStr = count + " - ";
+    let saveEl = document.getElementById("save-el");
+    saveEl.innerHTML += saveStr;
+    count = 0;
+    document.getElementById("count-el").innerHTML = count;
 }
